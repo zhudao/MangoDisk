@@ -1974,11 +1974,11 @@
     }
   },
   "analysis": {
+    "multiSelect": "多選",
     "deleteSelectedAction": "刪除",
     "selectedCount": "已選 {count} 項",
     "selectAll": "全選目前清單中可刪除的項目",
     "selectItem": "選取 {name}",
-    "clearSelection": "取消選取",
     "protectedItem": "系統或應用程式管理的項目，禁止刪除",
     "batchDeleteTitle": "永久刪除所選項目？",
     "batchDeleteDescription": "所選項目及資料夾內的全部內容將被永久刪除，無法復原",
@@ -2617,7 +2617,15 @@
     "websiteAction": "官方網站",
     "repositoryAction": "GitHub",
     "licenseAction": "GPL-3.0 授權條款",
-    "versionValue": "版本 {version}"
+    "versionValue": "版本 {version}",
+    "explorerIntegration": {
+      "title": "資料夾右鍵選單",
+      "description": "在資料夾右鍵選單中顯示「使用 MangoDisk 分析空間」",
+      "command": "使用 MangoDisk 分析空間",
+      "failed": "無法更新右鍵選單，請查看應用程式記錄後重試",
+      "retry": "重試",
+      "queued": "將在目前操作完成後分析此資料夾"
+    }
   },
   "updates": {
     "noticeAvailable": "有新版本",
@@ -4120,7 +4128,7 @@
     "batteryPowerHint": "淨流入或流出電池的功率，與整機功率不同",
     "temperature": "電池溫度",
     "health": "容量健康度",
-    "healthHint": "滿充容量與設計容量的比值，可能與系統設定顯示的健康度不同",
+    "healthHint": "滿充/設計容量；綠≥90%、橙80–<90%、紅<80%（非系統診斷）",
     "cycles": "循環次數",
     "inputPower": "目前輸入",
     "reportedPower": "回報功率",
@@ -4140,6 +4148,7 @@
     "noMeasurements": "此裝置沒有可用的電源測量資料",
     "states": {
       "charging": "正在充電",
+      "finishing": "即將充滿",
       "discharging": "使用電池",
       "full": "已充滿",
       "paused": "已暫停充電",

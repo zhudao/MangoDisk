@@ -1974,11 +1974,11 @@
     }
   },
   "analysis": {
+    "multiSelect": "Multi-select",
     "deleteSelectedAction": "Delete",
     "selectedCount": "{count} selected",
     "selectAll": "Select all deletable items in this list",
     "selectItem": "Select {name}",
-    "clearSelection": "Clear selection",
     "protectedItem": "System or application-managed item; deletion is unavailable",
     "batchDeleteTitle": "Permanently delete the selected items?",
     "batchDeleteDescription": "Selected items and all folder contents will be permanently deleted. This cannot be undone",
@@ -2617,7 +2617,15 @@
     "websiteAction": "Official Website",
     "repositoryAction": "GitHub",
     "licenseAction": "GPL-3.0 License",
-    "versionValue": "Version {version}"
+    "versionValue": "Version {version}",
+    "explorerIntegration": {
+      "title": "Folder context menu",
+      "description": "Show “Analyze space with MangoDisk” in the folder context menu",
+      "command": "Analyze space with MangoDisk",
+      "failed": "Could not update the context menu. Check the application log and try again",
+      "retry": "Retry",
+      "queued": "The folder will be analyzed after the current operation finishes"
+    }
   },
   "updates": {
     "noticeAvailable": "Update available",
@@ -4120,7 +4128,7 @@
     "batteryPowerHint": "Net power entering or leaving the battery; this is separate from system power",
     "temperature": "Battery temperature",
     "health": "Capacity health",
-    "healthHint": "Full-charge capacity divided by design capacity. This may differ from the health reported in system settings",
+    "healthHint": "Full-charge / design capacity. Green ≥90%, amber 80–<90%, red <80%; capacity bands, not system diagnosis",
     "cycles": "Cycles",
     "inputPower": "Current input",
     "reportedPower": "Reported power",
@@ -4140,6 +4148,7 @@
     "noMeasurements": "No power measurements are available on this device",
     "states": {
       "charging": "Charging",
+      "finishing": "Finishing charge",
       "discharging": "On battery",
       "full": "Fully charged",
       "paused": "Charging paused",

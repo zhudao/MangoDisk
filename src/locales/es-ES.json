@@ -1974,11 +1974,11 @@
     }
   },
   "analysis": {
+    "multiSelect": "Selección múltiple",
     "deleteSelectedAction": "Eliminar",
     "selectedCount": "{count} seleccionados",
     "selectAll": "Seleccionar todos los elementos eliminables de esta lista",
     "selectItem": "Seleccionar {name}",
-    "clearSelection": "Borrar selección",
     "protectedItem": "Elemento gestionado por el sistema o una aplicación; no se puede eliminar",
     "batchDeleteTitle": "¿Eliminar permanentemente los elementos seleccionados?",
     "batchDeleteDescription": "Los elementos seleccionados y todo el contenido de las carpetas se eliminarán de forma irreversible",
@@ -2617,7 +2617,15 @@
     "websiteAction": "Sitio web oficial",
     "repositoryAction": "GitHub",
     "licenseAction": "Licencia GPL-3.0",
-    "versionValue": "Versión {version}"
+    "versionValue": "Versión {version}",
+    "explorerIntegration": {
+      "title": "Menú contextual de carpetas",
+      "description": "Mostrar «Analizar espacio con MangoDisk» en el menú contextual de las carpetas",
+      "command": "Analizar espacio con MangoDisk",
+      "failed": "No se pudo actualizar el menú contextual. Revisa el registro de la aplicación e inténtalo de nuevo",
+      "retry": "Reintentar",
+      "queued": "La carpeta se analizará cuando termine la operación actual"
+    }
   },
   "updates": {
     "noticeAvailable": "Actualización disponible",
@@ -4120,7 +4128,7 @@
     "batteryPowerHint": "Potencia neta que entra o sale de la batería, distinta de la potencia del sistema",
     "temperature": "Temperatura de batería",
     "health": "Salud de capacidad",
-    "healthHint": "Relación entre la capacidad de carga completa y la de diseño. Puede diferir de los ajustes del sistema",
+    "healthHint": "Capacidad completa/de diseño: ≥90% verde, 80–<90% ámbar, <80% rojo. Niveles de capacidad, no diagnóstico del sistema",
     "cycles": "Ciclos",
     "inputPower": "Entrada actual",
     "reportedPower": "Potencia declarada",
@@ -4140,6 +4148,7 @@
     "noMeasurements": "No hay mediciones de energía disponibles en este dispositivo",
     "states": {
       "charging": "Cargando",
+      "finishing": "Finalizando carga",
       "discharging": "Usando batería",
       "full": "Carga completa",
       "paused": "Carga en pausa",

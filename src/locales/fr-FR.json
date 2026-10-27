@@ -1974,11 +1974,11 @@
     }
   },
   "analysis": {
+    "multiSelect": "Sélection multiple",
     "deleteSelectedAction": "Supprimer",
     "selectedCount": "{count} sélectionnés",
     "selectAll": "Sélectionner tous les éléments supprimables de cette liste",
     "selectItem": "Sélectionner {name}",
-    "clearSelection": "Effacer la sélection",
     "protectedItem": "Élément géré par le système ou une application ; suppression indisponible",
     "batchDeleteTitle": "Supprimer définitivement les éléments sélectionnés ?",
     "batchDeleteDescription": "Les éléments sélectionnés et tout le contenu des dossiers seront supprimés définitivement, sans récupération possible",
@@ -2617,7 +2617,15 @@
     "websiteAction": "Site officiel",
     "repositoryAction": "GitHub",
     "licenseAction": "Licence GPL-3.0",
-    "versionValue": "Version {version}"
+    "versionValue": "Version {version}",
+    "explorerIntegration": {
+      "title": "Menu contextuel des dossiers",
+      "description": "Afficher « Analyser l’espace avec MangoDisk » dans le menu contextuel des dossiers",
+      "command": "Analyser l’espace avec MangoDisk",
+      "failed": "Impossible de mettre à jour le menu contextuel. Consultez le journal de l’application et réessayez",
+      "retry": "Réessayer",
+      "queued": "Le dossier sera analysé à la fin de l’opération en cours"
+    }
   },
   "updates": {
     "noticeAvailable": "Mise à jour disponible",
@@ -4120,7 +4128,7 @@
     "batteryPowerHint": "Puissance nette entrant ou sortant de la batterie, distincte de la puissance du système",
     "temperature": "Température batterie",
     "health": "État de la capacité",
-    "healthHint": "Rapport entre capacité à pleine charge et capacité nominale. Peut différer des réglages système",
+    "healthHint": "Capacité pleine/nominale : ≥90% vert, 80–<90% orange, <80% rouge. Repères de capacité, pas un diagnostic système",
     "cycles": "Cycles",
     "inputPower": "Entrée actuelle",
     "reportedPower": "Puissance déclarée",
@@ -4140,6 +4148,7 @@
     "noMeasurements": "Aucune mesure d’alimentation n’est disponible sur cet appareil",
     "states": {
       "charging": "En charge",
+      "finishing": "Charge presque terminée",
       "discharging": "Sur batterie",
       "full": "Charge complète",
       "paused": "Charge en pause",

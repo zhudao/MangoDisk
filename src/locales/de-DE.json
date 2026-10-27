@@ -1974,11 +1974,11 @@
     }
   },
   "analysis": {
+    "multiSelect": "Mehrfachauswahl",
     "deleteSelectedAction": "Löschen",
     "selectedCount": "{count} ausgewählt",
     "selectAll": "Alle löschbaren Einträge dieser Liste auswählen",
     "selectItem": "{name} auswählen",
-    "clearSelection": "Auswahl aufheben",
     "protectedItem": "Vom System oder einer Anwendung verwalteter Eintrag; Löschen nicht verfügbar",
     "batchDeleteTitle": "Ausgewählte Einträge dauerhaft löschen?",
     "batchDeleteDescription": "Ausgewählte Elemente und alle Ordnerinhalte werden unwiderruflich gelöscht",
@@ -2617,7 +2617,15 @@
     "websiteAction": "Offizielle Website",
     "repositoryAction": "GitHub",
     "licenseAction": "GPL-3.0-Lizenz",
-    "versionValue": "Version {version}"
+    "versionValue": "Version {version}",
+    "explorerIntegration": {
+      "title": "Ordner-Kontextmenü",
+      "description": "„Speicher mit MangoDisk analysieren“ im Ordner-Kontextmenü anzeigen",
+      "command": "Speicher mit MangoDisk analysieren",
+      "failed": "Das Kontextmenü konnte nicht aktualisiert werden. Prüfen Sie das Anwendungsprotokoll und versuchen Sie es erneut",
+      "retry": "Erneut versuchen",
+      "queued": "Der Ordner wird nach Abschluss des aktuellen Vorgangs analysiert"
+    }
   },
   "updates": {
     "noticeAvailable": "Update verfügbar",
@@ -4120,7 +4128,7 @@
     "batteryPowerHint": "Nettoleistung in den oder aus dem Akku; unabhängig von der Systemleistung",
     "temperature": "Akkutemperatur",
     "health": "Kapazitätszustand",
-    "healthHint": "Verhältnis von Vollladekapazität zu Designkapazität. Kann von den Systemeinstellungen abweichen",
+    "healthHint": "Volllade-/Designkapazität: ≥90% grün, 80–<90% orange, <80% rot. Kapazitätsstufen, keine Systemdiagnose",
     "cycles": "Ladezyklen",
     "inputPower": "Aktueller Eingang",
     "reportedPower": "Gemeldete Leistung",
@@ -4140,6 +4148,7 @@
     "noMeasurements": "Für dieses Gerät sind keine Energiemesswerte verfügbar",
     "states": {
       "charging": "Wird geladen",
+      "finishing": "Fast vollständig geladen",
       "discharging": "Akkubetrieb",
       "full": "Vollständig geladen",
       "paused": "Laden pausiert",

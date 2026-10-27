@@ -1974,11 +1974,11 @@
     }
   },
   "analysis": {
+    "multiSelect": "Selecionar vários",
     "deleteSelectedAction": "Excluir",
     "selectedCount": "{count} selecionados",
     "selectAll": "Selecionar todos os itens que podem ser excluídos nesta lista",
     "selectItem": "Selecionar {name}",
-    "clearSelection": "Limpar seleção",
     "protectedItem": "Item gerenciado pelo sistema ou por um aplicativo; exclusão indisponível",
     "batchDeleteTitle": "Excluir permanentemente os itens selecionados?",
     "batchDeleteDescription": "Os itens selecionados e todo o conteúdo das pastas serão excluídos. Esta ação é irreversível",
@@ -2617,7 +2617,15 @@
     "websiteAction": "Site oficial",
     "repositoryAction": "GitHub",
     "licenseAction": "Licença GPL-3.0",
-    "versionValue": "Versão {version}"
+    "versionValue": "Versão {version}",
+    "explorerIntegration": {
+      "title": "Menu de contexto de pastas",
+      "description": "Mostrar “Analisar espaço com MangoDisk” no menu de contexto de pastas",
+      "command": "Analisar espaço com MangoDisk",
+      "failed": "Não foi possível atualizar o menu de contexto. Consulte o log do aplicativo e tente novamente",
+      "retry": "Tentar novamente",
+      "queued": "A pasta será analisada após a conclusão da operação atual"
+    }
   },
   "updates": {
     "noticeAvailable": "Atualização disponível",
@@ -4120,7 +4128,7 @@
     "batteryPowerHint": "Potência líquida que entra ou sai da bateria, diferente da potência do sistema",
     "temperature": "Temperatura da bateria",
     "health": "Saúde da capacidade",
-    "healthHint": "Relação entre a capacidade de carga completa e a de projeto. Pode diferir dos ajustes do sistema",
+    "healthHint": "Carga completa/projeto: ≥90% verde, 80–<90% âmbar, <80% vermelho. Faixas de capacidade, não diagnóstico do sistema",
     "cycles": "Ciclos",
     "inputPower": "Entrada atual",
     "reportedPower": "Potência informada",
@@ -4140,6 +4148,7 @@
     "noMeasurements": "Não há medições de energia disponíveis neste dispositivo",
     "states": {
       "charging": "Carregando",
+      "finishing": "Finalizando a carga",
       "discharging": "Usando bateria",
       "full": "Carga completa",
       "paused": "Carga pausada",

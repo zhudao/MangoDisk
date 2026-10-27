@@ -1974,11 +1974,11 @@
     }
   },
   "analysis": {
+    "multiSelect": "Çoklu seçim",
     "deleteSelectedAction": "Sil",
     "selectedCount": "{count} öğe seçildi",
     "selectAll": "Bu listedeki silinebilir tüm öğeleri seç",
     "selectItem": "{name} öğesini seç",
-    "clearSelection": "Seçimi temizle",
     "protectedItem": "Sistem veya uygulama tarafından yönetilen öğe; silinemez",
     "batchDeleteTitle": "Seçili öğeler kalıcı olarak silinsin mi?",
     "batchDeleteDescription": "Seçili öğeler ve klasörlerin tüm içeriği kalıcı olarak silinir. Bu işlem geri alınamaz",
@@ -2617,7 +2617,15 @@
     "websiteAction": "Resmî Web Sitesi",
     "repositoryAction": "GitHub",
     "licenseAction": "GPL-3.0 Lisansı",
-    "versionValue": "Sürüm {version}"
+    "versionValue": "Sürüm {version}",
+    "explorerIntegration": {
+      "title": "Klasör sağ tık menüsü",
+      "description": "Klasör menüsünde “MangoDisk ile alanı analiz et” seçeneğini göster",
+      "command": "MangoDisk ile alanı analiz et",
+      "failed": "Sağ tık menüsü güncellenemedi. Uygulama günlüğünü kontrol edip tekrar deneyin",
+      "retry": "Tekrar dene",
+      "queued": "Geçerli işlem tamamlandıktan sonra klasör analiz edilecek"
+    }
   },
   "updates": {
     "noticeAvailable": "Güncelleme mevcut",
@@ -4120,7 +4128,7 @@
     "batteryPowerHint": "Pile giren veya pilden çıkan net güç; sistem gücünden farklıdır",
     "temperature": "Pil sıcaklığı",
     "health": "Kapasite sağlığı",
-    "healthHint": "Tam şarj kapasitesinin tasarım kapasitesine oranıdır. Sistem ayarlarından farklı olabilir",
+    "healthHint": "Tam şarj/tasarım kapasitesi: ≥%90 yeşil, %80–<%90 turuncu, <%80 kırmızı. Kapasite aralığıdır, sistem tanısı değildir",
     "cycles": "Döngü sayısı",
     "inputPower": "Anlık giriş",
     "reportedPower": "Bildirilen güç",
@@ -4140,6 +4148,7 @@
     "noMeasurements": "Bu cihazda kullanılabilir güç ölçümü yok",
     "states": {
       "charging": "Şarj oluyor",
+      "finishing": "Şarj tamamlanıyor",
       "discharging": "Pil kullanılıyor",
       "full": "Tam dolu",
       "paused": "Şarj duraklatıldı",

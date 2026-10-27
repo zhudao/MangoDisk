@@ -1974,11 +1974,11 @@
     }
   },
   "analysis": {
+    "multiSelect": "다중 선택",
     "deleteSelectedAction": "삭제",
     "selectedCount": "{count}개 선택됨",
     "selectAll": "현재 목록에서 삭제 가능한 항목 모두 선택",
     "selectItem": "{name} 선택",
-    "clearSelection": "선택 해제",
     "protectedItem": "시스템 또는 앱이 관리하는 항목이므로 삭제할 수 없습니다",
     "batchDeleteTitle": "선택한 항목을 영구 삭제할까요?",
     "batchDeleteDescription": "선택한 항목과 폴더 안의 모든 내용이 영구 삭제됩니다. 복구할 수 없습니다",
@@ -2617,7 +2617,15 @@
     "websiteAction": "공식 웹사이트",
     "repositoryAction": "GitHub",
     "licenseAction": "GPL-3.0 라이선스",
-    "versionValue": "버전 {version}"
+    "versionValue": "버전 {version}",
+    "explorerIntegration": {
+      "title": "폴더 오른쪽 클릭 메뉴",
+      "description": "폴더 메뉴에 “MangoDisk로 공간 분석”을 표시합니다",
+      "command": "MangoDisk로 공간 분석",
+      "failed": "메뉴를 업데이트하지 못했습니다. 앱 로그를 확인한 후 다시 시도하세요",
+      "retry": "다시 시도",
+      "queued": "현재 작업이 끝나면 폴더를 분석합니다"
+    }
   },
   "updates": {
     "noticeAvailable": "업데이트 가능",
@@ -4120,7 +4128,7 @@
     "batteryPowerHint": "배터리로 들어가거나 나오는 순전력이며 시스템 전력과는 다릅니다",
     "temperature": "배터리 온도",
     "health": "용량 상태",
-    "healthHint": "완충 용량과 설계 용량의 비율입니다. 시스템 설정에 표시되는 상태와 다를 수 있습니다",
+    "healthHint": "완충/설계 용량 비율. ≥90% 녹색, 80–<90% 주의, <80% 빨강. 시스템 건강 진단과는 다릅니다",
     "cycles": "사이클 수",
     "inputPower": "현재 입력",
     "reportedPower": "보고된 전력",
@@ -4140,6 +4148,7 @@
     "noMeasurements": "이 기기에서는 전원 측정값을 사용할 수 없습니다",
     "states": {
       "charging": "충전 중",
+      "finishing": "충전 마무리 중",
       "discharging": "배터리 사용 중",
       "full": "완충됨",
       "paused": "충전 일시 중지",

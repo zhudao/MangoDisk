@@ -13,6 +13,7 @@ withDefaults(
       copy?: boolean;
       hint?: string;
       liveHint?: boolean;
+      tone?: 'success' | 'warning' | 'critical';
     }[];
   }>(),
   { active: true, layout: 'tiles' }
@@ -27,7 +28,7 @@ withDefaults(
         >
         <span v-else>{{ fact.label }}</span>
       </dt>
-      <dd>
+      <dd :data-tone="fact.tone">
         <MdCopyButton
           v-if="fact.copy && fact.value !== '—'"
           :active="active"
@@ -46,7 +47,7 @@ withDefaults(
 @reference "@assets/main.css";
 .resource-facts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(90px, 100%), 1fr));
   gap: 8px;
   flex: none;
 }
@@ -75,6 +76,18 @@ dd {
   font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
+dd[data-tone='success'] {
+  @apply text-success-foreground;
+}
+dd[data-tone='warning'] {
+  @apply text-warning-foreground;
+}
+dd[data-tone='critical'] {
+  @apply text-destructive-text;
+}
+.resource-fact dd[data-tone] small {
+  color: inherit;
+}
 small {
   margin-left: 3px;
   font-size: 10px;
@@ -97,6 +110,7 @@ small {
 }
 .rows .resource-fact {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
   gap: 12px;
@@ -113,7 +127,9 @@ small {
   font-size: 12px;
   font-weight: 500;
   text-align: right;
-  max-width: 72%;
+  max-width: 100%;
+  min-width: 0;
+  margin-left: auto;
   overflow-wrap: anywhere;
 }
 </style>
